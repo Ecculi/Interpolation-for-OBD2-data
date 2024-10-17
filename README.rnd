@@ -1,3 +1,5 @@
+# Interpolation for OBD2 data
+
 I'm currently working on a similar ESP32 + Bluetooth/WiFi OBD2 dongle solution. I discovered that the cheap Chinese BT/WiFi OBD2 dongles can only read data every 200-300ms, with significant variation in the delay. To reduce lag, I measure the time between data readings and use interpolation to smooth the values (e.g. speed) by transitioning between the previous and new values over that time period.
 
 https://www.elmelectronics.com/obdtips.html#UnderstandingOBD
